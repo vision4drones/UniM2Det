@@ -15,6 +15,10 @@ This repository contains the official implementation of two works:
 
 Both models support RGB, IR and RGB-IR inputs, and are trained jointly on DroneVehicle, VisDrone and RGBT-DronePerson.
 
+## Framework
+
+![UniM2Det framework](resources/framework.png)
+
 ## Highlights
 
 - **Unified label space.** A VLM-based detection head uses text prompts to align heterogeneous labels across datasets and modalities.
@@ -277,7 +281,6 @@ This project is built on [MMDetection](https://github.com/open-mmlab/mmdetection
 
 ## TODO
 
-- [x] Add the public repository URL.
 - [ ] Add paper links, DOI / arXiv information, and complete BibTeX entries.
 - [ ] Release checkpoints for UniM2Det and UniM2Det-S.
 - [ ] Fill in the model zoo with per-dataset and overall results.
@@ -285,4 +288,3 @@ This project is built on [MMDetection](https://github.com/open-mmlab/mmdetection
 - [ ] Verify installation on a clean machine with Python 3.8 and CUDA 11.8.
 - [ ] Clean up experiment-only configs, dead imports, and temporary files before release.
 - [ ] Add license and third-party notice files.
-
