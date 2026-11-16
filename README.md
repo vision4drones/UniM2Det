@@ -275,9 +275,25 @@ bash tools/dist_test.sh \
 }
 ```
 
+
+## License and Third-Party Notices
+
+The original code developed for UniM2Det and UniM2Det-S is released under the Apache License 2.0. See [LICENSE](LICENSE) for details.
+
+This repository incorporates and modifies code from the following open-source projects:
+
+- **MMDetection** ([MMDetection](https://github.com/open-mmlab/mmdetection)): This project is based on MMDetection 3.3.0. Portions of the MMDetection source code have been modified and extended to support our unified multi-dataset and multi-modal UAV object detection framework, including custom backbones, detectors, and dataset components. The original MMDetection code is licensed under the Apache License 2.0.
+- **Soft-MoE** ([soft-moe](https://github.com/bwconrad/soft-moe)): Portions of the Soft-MoE implementation, including slot-based expert dispatch and combination mechanisms, have been adapted and modified for UniM2Det-S. The original implementation is licensed under the Apache License 2.0.
+- **PyTorch** ([PyTorch](https://github.com/pytorch/pytorch)): PyTorch is used as a deep learning framework dependency. The PyTorch project is distributed under a BSD-style license.
+
+The original copyright, license, and attribution notices of third-party source code are retained where applicable. Files derived from third-party implementations include notices identifying the modifications made for this project.
+
+Third-party components remain subject to their respective original licenses. Please refer to [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for further details.
+
 ## Acknowledgements
 
-This project is built on [MMDetection](https://github.com/open-mmlab/mmdetection) and [MM-Grounding-DINO](https://github.com/open-mmlab/mmdetection/tree/main/configs/mm_grounding_dino). We thank the OpenMMLab community for their excellent open-source work.
+We thank the authors and contributors of PyTorch, MMDetection, and Soft-MoE for their valuable open-source contributions. We also acknowledge the OpenMMLab community for providing the foundational detection framework used in this work.
+
 
 ## TODO
 
@@ -285,6 +301,4 @@ This project is built on [MMDetection](https://github.com/open-mmlab/mmdetection
 - [ ] Release checkpoints for UniM2Det and UniM2Det-S.
 - [ ] Fill in the model zoo with per-dataset and overall results.
 - [ ] Add dataset download instructions and annotation conversion scripts.
-- [ ] Verify installation on a clean machine with Python 3.8 and CUDA 11.8.
-- [ ] Clean up experiment-only configs, dead imports, and temporary files before release.
 - [ ] Add license and third-party notice files.
